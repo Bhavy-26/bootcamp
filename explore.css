@@ -24,12 +24,14 @@ body {
 
 
 /* Header Styling */
+/* Navbar Styling */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #f8f5f0; /* Light wooden color */
-    padding: 15px 50px;
+    padding: 10px 20px; /* Reduced padding */
+    height: 55px; /* Adjusted height */
     position: fixed;
     width: 100%;
     top: 0;
@@ -41,23 +43,23 @@ body {
 /* Hover Effect */
 .navbar:hover {
     background-color: #e3b04b; /* Darker wooden shade */
-   
 }
 
 /* Logo Styling */
 .logo img {
-    width: 120px; /* Adjust size as needed */
+    width: 90px; /* Reduced size */
+    height: auto;
 }
 
 /* Navigation Links */
 .nav-links {
     display: flex;
-    gap: 20px;
+    gap: 15px;
 }
 
 .nav-links a {
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px; /* Slightly smaller font */
     color: #4a2d14; /* Dark brown */
     font-weight: bold;
     transition: color 0.3s ease;
@@ -70,11 +72,11 @@ body {
 /* Navigation Icons */
 .nav-icons {
     display: flex;
-    gap: 15px;
+    gap: 10px;
 }
 
 .nav-icons img {
-    width: 25px;
+    width: 22px; /* Slightly smaller icons */
     cursor: pointer;
     transition: transform 0.3s ease;
 }
@@ -83,24 +85,49 @@ body {
     transform: scale(1.1);
 }
 
-/* Responsive */
-
+/* Responsive Design */
 @media (max-width: 768px) {
     .navbar {
-        flex-direction: column;
-        padding: 10px;
+        flex-direction: row;
+        height: 50px; /* Further reduced height */
+        padding: 8px 15px;
+    }
+
+    .logo img {
+        width: 70px; /* Smaller logo */
     }
 
     .nav-links {
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        background: #f8f5f0;
         flex-direction: column;
         text-align: center;
         gap: 10px;
+        padding: 10px 0;
+        display: none;
+    }
+
+    .nav-links.active {
+        display: flex;
     }
 
     .nav-icons {
-        margin-top: 10px;
+        gap: 8px;
+    }
+
+    /* Hamburger Menu */
+    .hamburger {
+        display: block;
+        font-size: 22px;
+        cursor: pointer;
     }
 }
+
+
+
 
 
 .state-cards {
