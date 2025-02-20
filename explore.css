@@ -5,6 +5,11 @@
 } */
 
 /* Reset and Body Styling */
+
+/* Google Font */
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400&display=swap");
+
 * {
     margin: 0;
     padding: 0;
@@ -79,6 +84,7 @@ body {
 }
 
 /* Responsive */
+
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
@@ -153,6 +159,7 @@ body {
 
 .card:hover .card-button {
     opacity: 1;
+    cursor: pointer;
 }
 
 .text-title{
@@ -164,14 +171,12 @@ body {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+
+@media (max-width: 768px) {  /* Fixed the syntax */
     .state-cards {
-        grid-template-columns: 1fr; /* Single column for mobile */
+        grid-template-columns: 1fr;
     }
 }
 
-
-/* Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400&display=swap');
 
 
